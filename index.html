@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Sawsan Mohamed - Front-End Developer Portfolio. Explore my skills, creativity, and passion for web development."
+    />
+
+    <meta name="theme-color" content="#080808" />
+
+    <title>Sawsan Mohamed | Front-End Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="sawsan.css" />
+
+    <!-- JavaScript -->
+    <script src="sawsan.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="stars-background" id="stars-background" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="navbar-inner container glass" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Sawsan home">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>Sawsan<span class="orange-text">.</span></span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About Me</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#why-me" data-i18n="nav.whyMe">Why Me</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="language-btn"
+            id="language-btn"
+            type="button"
+            aria-label="Switch language"
+          >
+            <span aria-hidden="true">🌐</span>
+            <span id="language-label">العربية</span>
+          </button>
+
+          <button
+            class="menu-btn"
+            id="menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section class="home-section" id="home">
+        <div class="container home-grid">
+          <div class="home-content reveal">
+            <div class="availability-badge">
+              <span class="status-dot"></span>
+              <span data-i18n="home.badge">
+                Always learning & growing
+              </span>
+            </div>
+
+            <p class="home-intro" data-i18n="home.greeting">
+              Hello, I'm
+            </p>
+
+            <h1>
+              <span data-i18n="home.firstName">Sawsan</span>
+              <br />
+              <span class="name-highlight" data-i18n="home.lastName">
+                Mohamed
+              </span>
+            </h1>
+
+            <h2 class="job-title">
+              <span class="job-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span data-i18n="home.role">Front-End Developer</span>
+            </h2>
+
+            <p class="home-description" data-i18n="home.description">
+              I love turning creative ideas into beautiful, interactive,
+              and user-friendly web experiences. I'm constantly learning
+              and improving my skills, one project at a time.
+            </p>
+
+            <div class="home-buttons">
+              <a href="#skills" class="primary-btn">
+                <span data-i18n="home.skillsBtn">Explore My Skills</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="#contact" class="secondary-btn" data-i18n="home.contactBtn">
+                Let's Connect
+              </a>
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+              <span class="scroll-icon" aria-hidden="true">↓</span>
+              <span data-i18n="home.scroll">Scroll to explore</span>
+            </a>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="home-visual">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="floating-tag tag-top">
+              <span class="tag-symbol">✦</span>
+              <span>Creative</span>
+            </div>
+
+            <div class="profile-frame">
+              <div class="profile-placeholder">
+                <img
+                  src="images/profile.png"
+                  alt="Sawsan Mohamed"
+                  class="profile-image"
+                  id="profile-image"
+                />
+
+                <div class="profile-fallback" id="profile-fallback">
+                  <span>S</span>
+                  <small data-i18n="home.photoPlaceholder">
+                    YOUR PHOTO
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-tag tag-bottom">
+              <span class="tag-symbol">✧</span>
+              <span>Front-End</span>
+            </div>
+
+            <span class="decor-star star-one" aria-hidden="true">✦</span>
+            <span class="decor-star star-two" aria-hidden="true">✧</span>
+            <span class="decor-star star-three" aria-hidden="true">✦</span>
+          </div>
+        </div>
+
+        <div class="home-bottom-glow" aria-hidden="true"></div>
+      </section>
+
+      <!-- About Me -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">
+              GET TO KNOW ME
+            </p>
+
+            <h2>
+              <span data-i18n="about.title">A Little</span>
+              <span class="orange-text" data-i18n="about.highlight">
+                About Me
+              </span>
+            </h2>
+
+            <p data-i18n="about.subtitle">
+              Every great developer starts with curiosity and a willingness to learn.
+            </p>
+          </div>
+
+          <div class="about-layout">
+            <article class="about-text glass reveal">
+              <span class="about-quote" aria-hidden="true">“</span>
+
+              <p data-i18n="about.description">
+                I'm Sawsan Mohamed, an aspiring Front-End Developer who
+                enjoys creating modern and engaging web interfaces. I love
+                combining thoughtful design, beautiful colors, and interactive
+                details to create enjoyable digital experiences.
+              </p>
+
+              <p class="about-note" data-i18n="about.note">
+                I'm currently developing my skills in HTML, CSS, and JavaScript,
+                while exploring new ways to make websites more responsive,
+                accessible, and engaging.
+              </p>
+
+              <div class="about-signature">
+                <span class="signature-line"></span>
+                <span>Sawsan Mohamed</span>
+              </div>
+            </article>
+
+            <div class="about-cards">
+              <article class="about-card glass reveal">
+                <div class="about-card-icon" aria-hidden="true">♡</div>
+                <div>
+                  <h3 data-i18n="about.cards.0.title">Design Enthusiast</h3>
+                  <p data-i18n="about.cards.0.description">
+                    I enjoy beautiful layouts, thoughtful colors, and creative visual details.
+                  </p>
+                </div>
+              </article>
+
+              <article class="about-card glass reveal">
+                <div class="about-card-icon" aria-hidden="true">◎</div>
+                <div>
+                  <h3 data-i18n="about.cards.1.title">Always Improving</h3>
+                  <p data-i18n="about.cards.1.description">
+                    Every new challenge is an opportunity to learn something valuable.
+                  </p>
+                </div>
+              </article>
+
+              <article class="about-card glass reveal">
+                <div class="about-card-icon" aria-hidden="true">✧</div>
+                <div>
+                  <h3 data-i18n="about.cards.2.title">Creative Thinking</h3>
+                  <p data-i18n="about.cards.2.description">
+                    I love exploring fresh ideas and turning them into meaningful experiences.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="skills.eyebrow">
+              WHAT I WORK WITH
+            </p>
+
+            <h2>
+              <span data-i18n="skills.title">My</span>
+              <span class="orange-text" data-i18n="skills.highlight">
+                Skills
+              </span>
+            </h2>
+
+            <p data-i18n="skills.subtitle">
+              The technologies I'm learning and using to build better web experiences.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card glass reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon" aria-hidden="true">#</div>
+                <span class="skill-level intermediate" data-i18n="skills.levels.intermediate">
+                  Intermediate
+                </span>
+              </div>
+
+              <h3>HTML</h3>
+              <p data-i18n="skills.items.html">
+                Building well-structured and semantic web pages.
+              </p>
+
+              <div class="skill-card-line">
+                <span></span>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon" aria-hidden="true">✧</div>
+                <span class="skill-level intermediate" data-i18n="skills.levels.intermediate">
+                  Intermediate
+                </span>
+              </div>
+
+              <h3>CSS</h3>
+              <p data-i18n="skills.items.css">
+                Creating attractive layouts, colors, and visual effects.
+              </p>
+
+              <div class="skill-card-line">
+                <span></span>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon" aria-hidden="true">JS</div>
+                <span class="skill-level beginner" data-i18n="skills.levels.beginner">
+                  Beginner
+                </span>
+              </div>
+
+              <h3>JavaScript</h3>
+              <p data-i18n="skills.items.javascript">
+                Learning to bring websites to life with interactivity.
+              </p>
+
+              <div class="skill-card-line">
+                <span></span>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon" aria-hidden="true">▣</div>
+                <span class="skill-level learning" data-i18n="skills.levels.learning">
+                  Developing
+                </span>
+              </div>
+
+              <h3>Responsive Design</h3>
+              <p data-i18n="skills.items.responsive">
+                Working toward websites that adapt to different screen sizes.
+              </p>
+
+              <div class="skill-card-line">
+                <span></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="skills-footer">
+            <span class="skills-footer-icon" aria-hidden="true">✦</span>
+            <p data-i18n="skills.footer">
+              Always learning, always experimenting, always improving.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What Makes Me Different -->
+      <section class="section why-section" id="why-me">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="whyMe.eyebrow">
+              A LITTLE MORE ABOUT ME
+            </p>
+
+            <h2>
+              <span data-i18n="whyMe.title">What Makes Me</span>
+              <span class="orange-text" data-i18n="whyMe.highlight">
+                Different
+              </span>
+            </h2>
+
+            <p data-i18n="whyMe.subtitle">
+              It's not just about writing code. It's also about how I think, learn, and create.
+            </p>
+          </div>
+
+          <div class="qualities-grid">
+            <article class="quality-card glass reveal">
+              <div class="quality-top">
+                <span class="quality-number">01</span>
+                <div class="quality-icon" aria-hidden="true">✧</div>
+              </div>
+
+              <h3 data-i18n="whyMe.cards.creative.title">Creative</h3>
+              <p data-i18n="whyMe.cards.creative.description">
+                I enjoy turning ideas into engaging designs with thoughtful colors and details.
+              </p>
+
+              <div class="quality-bottom"><span></span></div>
+            </article>
+
+            <article class="quality-card glass reveal">
+              <div class="quality-top">
+                <span class="quality-number">02</span>
+                <div class="quality-icon" aria-hidden="true">◎</div>
+              </div>
+
+              <h3 data-i18n="whyMe.cards.problemSolver.title">Problem Solver</h3>
+              <p data-i18n="whyMe.cards.problemSolver.description">
+                I approach challenges with curiosity and look for practical solutions.
+              </p>
+
+              <div class="quality-bottom"><span></span></div>
+            </article>
+
+            <article class="quality-card glass reveal">
+              <div class="quality-top">
+                <span class="quality-number">03</span>
+                <div class="quality-icon" aria-hidden="true">⌕</div>
+              </div>
+
+              <h3 data-i18n="whyMe.cards.detailOriented.title">Detail-Oriented</h3>
+              <p data-i18n="whyMe.cards.detailOriented.description">
+                I care about the small details that help make a website feel polished.
+              </p>
+
+              <div class="quality-bottom"><span></span></div>
+            </article>
+
+            <article class="quality-card glass reveal">
+              <div class="quality-top">
+                <span class="quality-number">04</span>
+                <div class="quality-icon" aria-hidden="true">↗</div>
+              </div>
+
+              <h3 data-i18n="whyMe.cards.fastLearner.title">Fast Learner</h3>
+              <p data-i18n="whyMe.cards.fastLearner.description">
+                I'm always exploring new tools and finding ways to improve my skills.
+              </p>
+
+              <div class="quality-bottom"><span></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-card glass reveal">
+            <div class="contact-decoration contact-decoration-one"></div>
+            <div class="contact-decoration contact-decoration-two"></div>
+
+            <div class="contact-content">
+              <div class="contact-icon" aria-hidden="true">✉</div>
+
+              <p class="eyebrow" data-i18n="contact.eyebrow">
+                LET'S TALK
+              </p>
+
+              <h2>
+                <span data-i18n="contact.title">Have an Idea?</span>
+                <span class="orange-text" data-i18n="contact.highlight">
+                  Let's Connect.
+                </span>
+              </h2>
+
+              <p class="contact-description" data-i18n="contact.description">
+                I'm always happy to connect, exchange ideas, and explore
+                new opportunities to learn and grow.
+              </p>
+
+              <a
+                class="primary-btn"
+                id="email-link"
+                href="mailto:YOUR_EMAIL@example.com"
+              >
+                <span aria-hidden="true">✉</span>
+                <span data-i18n="contact.button">Say Hello</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <p class="contact-email-note" data-i18n="contact.note">
+                I'd love to hear from you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#home" class="footer-logo">
+          Sawsan<span>.</span>
+        </a>
+
+        <p data-i18n="footer">
+          Designed with creativity and a little orange magic.
+        </p>
+
+        <span class="footer-copyright">
+          © <span id="current-year"></span> Sawsan Mohamed
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
